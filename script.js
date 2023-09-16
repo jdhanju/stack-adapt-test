@@ -11,7 +11,7 @@ const API_ENDPOINT = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEE
 async function fetchCSV() {
     try {
         const response = await fetch(API_ENDPOINT);
-        const data = await response.text();
+        const data = await response.json();
         console.log(data);
         //data.values returns only the 
         return data.values;
@@ -26,6 +26,39 @@ async function fetchCSV() {
 async function updateBanner() {
     const csvData = await fetchCSV();
     if (!csvData) return;
+
+    // Get the current date
+    //const currentDate = new Date();
+    const currentDate = new Date("2023-01-02");
+
+    // Find the index of the row that matches the current date
+    let rowIndex = -1;
+    for (let i = 1; i < csvData.length; i++) {
+        const row = csvData[i];
+        const saleDate = new Date(row[2]);
+
+        if (currentDate.toDateString() === saleDate.toDateString()) {
+            rowIndex = i;
+            break;
+        }
+    }
+
+    // If no matching date is found, display a default message
+    if (rowIndex === -1) {
+        document.getElementById('product-name').textContent = "No sale today";
+        document.getElementById('product-image').src = "";
+        console.log("in here");
+        return;
+    }
+
+    // Get product details from the matching row
+    const productDetails = csvData[rowIndex];
+    const productName = productDetails[0];
+    const productImageLink = productDetails[1];
+
+    // Update the banner with the product details
+    document.getElementById('product-name').textContent = productName;
+    document.getElementById('product-image').src = productImageLink;
 }
 
 // Call the updateBanner function when the page loads
