@@ -25,7 +25,10 @@ async function fetchCSV() {
 // Function to parse CSV data and update the banner
 async function updateBanner() {
     const csvData = await fetchCSV();
-    if (!csvData) return;
+    if (!csvData){
+        //give error message and add error photo
+        return;
+    }
 
     // Get the current date
     //const currentDate = new Date();
@@ -47,7 +50,6 @@ async function updateBanner() {
     if (rowIndex === -1) {
         document.getElementById('product-name').textContent = "No sale today.";
         document.getElementById('product-image').src = "images/gift.png";
-        console.log("in here");
         return;
     }
 
