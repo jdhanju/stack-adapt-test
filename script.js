@@ -1,5 +1,5 @@
 //CSV url
-//const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSvowAT52nYidFW0JXMK9itpl-oG-7jvLN7Kdq8eHNA0_z-M-RpTj0qOMUBM3Rzvq_3yRAK3lAEHF-H/pub?output=csv';
+//const CSV_URL = 'https://docs.google.com/spreadsheets/d/1D4-ZYeQS7-hS_uOeJ62vRHsJODcnn1pEYBqJgsGfu_Q/edit#gid=1383889228';
 
 const API_KEY = GOOGLE_API_KEY;
 const SPREADSHEET_ID = '1D4-ZYeQS7-hS_uOeJ62vRHsJODcnn1pEYBqJgsGfu_Q';
@@ -13,7 +13,7 @@ async function fetchCSV() {
         const response = await fetch(API_ENDPOINT);
         const data = await response.json();
         console.log(data);
-        //data.values returns only the 
+        //data.values is an array where each index is another array that represents a row from the CSV file
         return data.values;
     } catch (error) {
         console.error('Error fetching CSV:', error);
@@ -29,7 +29,7 @@ async function updateBanner() {
 
     // Get the current date
     //const currentDate = new Date();
-    const currentDate = new Date("2023-01-02");
+    const currentDate = new Date("2023-01-03");
 
     // Find the index of the row that matches the current date
     let rowIndex = -1;

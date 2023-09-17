@@ -1,17 +1,40 @@
-#product-image{
-    width: 300px;
-    height: 600px;
-}
-
 .banner{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    height: 600px;
+    margin: auto;
+    border: 1px solid;
+    font-size: 300%;
 }
 
-.product-name{
-    position: relative;
+#product-image{
+    max-width: 300px;
+    max-height: 600px;
 }
+
+  /* On screens that are 480xpx or less*/
+@media screen and (max-width: 480px) {
+    .banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 320px;
+        height: 50px;
+        margin: auto;
+        font-size: 75%;
+    }
+    
+    #product-image{
+        max-width: 320px;
+        max-height: 50px;
+        padding-right: 10px;
+    }
+  }
+
+
 
 
 
