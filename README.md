@@ -12,7 +12,7 @@
 - Open the file **index.html** in a browser and the application will run
 
 ## How to test specific dates?
-- Currently, the application is set to using the users current date. Follow the steps below to test alternative dates.
+- Currently, the application is set to use the users current date. Follow the steps below to test alternative dates.
 - Open the file **script.js**
 - Scroll down to line 36
 - Comment out the line
@@ -21,5 +21,10 @@
 - Below is how the code should look if you want to test the date January 2, 2023
 
 ![screenshot1](images/sc1.png)
+
+## Known Issues
+- The given [csv file](https://docs.google.com/spreadsheets/d1D4-ZYeQS7-hS_uOeJ62vRHsJODcnn1pEYBqJgsGfu_Q/edit#gid=1383889228) has a incorrect URL.
+
+![screenshot2](images/sc2.png)
 
 
