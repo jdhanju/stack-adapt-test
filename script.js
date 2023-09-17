@@ -29,7 +29,7 @@ async function updateBanner() {
 
     // Get the current date
     //const currentDate = new Date();
-    const currentDate = new Date("2023-01-03");
+    const currentDate = new Date(2023, 00, 02, 0, 0, 0, 0);
 
     // Find the index of the row that matches the current date
     let rowIndex = -1;
@@ -45,8 +45,8 @@ async function updateBanner() {
 
     // If no matching date is found, display a default message
     if (rowIndex === -1) {
-        document.getElementById('product-name').textContent = "No sale today";
-        document.getElementById('product-image').src = "";
+        document.getElementById('product-name').textContent = "No sale today.";
+        document.getElementById('product-image').src = "images/gift.png";
         console.log("in here");
         return;
     }
