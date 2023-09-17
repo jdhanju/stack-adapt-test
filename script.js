@@ -27,12 +27,14 @@ async function updateBanner() {
     const csvData = await fetchCSV();
     if (!csvData){
         //give error message and add error photo
+        document.getElementById('product-name').textContent = "Error with loading CSV file";
+        document.getElementById('product-image').src = "images/error.svg";
         return;
     }
 
     // Get the current date
-    //const currentDate = new Date();
-    const currentDate = new Date(2023, 00, 02, 0, 0, 0, 0);
+    const currentDate = new Date();
+    //const currentDate = new Date(2023, 00, 02, 0, 0, 0, 0);
 
     // Find the index of the row that matches the current date
     let rowIndex = -1;

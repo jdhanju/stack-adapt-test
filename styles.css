@@ -8,6 +8,8 @@
     margin: auto;
     border: 1px solid;
     font-size: 300%;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 #product-image{
