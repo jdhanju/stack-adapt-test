@@ -10,7 +10,7 @@
 - A Google API key is required for this application to run. Here is [video](https://www.youtube.com/watch?v=nqlyLZxX0ys&ab_channel=DealsandTrainingbySan) on how you can create an API key, and enable the Google Sheets API.
 - Once the key is ready open the project folder
 - Open the file config.js
-- Set the variable **GOOGLE_API_KEY** equal to your Google API Key
+- Set the variable **GOOGLE_API_KEY** to your Google API Key
 - Open the file **index.html** in a browser and the application will run
 
 ## How to test specific dates?
