@@ -67,6 +67,8 @@ Hello! Thank you for submitting your code for review! I tried to run the code yo
 })();
 ```
 
+After reviewing the code I wasn't quite sure of the exact purpose of it. If you could email me back, and explain the purpose of this snippet, and what it should do that would be fantastic! For now, I'm going to assume the purpose of this code is to check what is being stored inside of the 2nd index of array arr. It looks like you're using the variable num to store the index you would like to check. This is great because changing the value of num will allow you to look at other indices of array arr, without making any other code changes. One problem with the code is the if statement. It works for now, but if the values inside of array arr ever change then the if statement will never be true, which will cause the program to never print an output. Another issue with the if statement is the use of a double equal sign. It is better practice to use a triple-equal sign because it checks for type and value, whereas a double-equal sign only checks for value.
+
 Even though the code above will work, I would like to share an alternative solution that is a little shorter. Since the objective of your code is to print the 2nd index of the array named arr we can remove all the code except for the console.log
 
 ```
@@ -83,7 +85,7 @@ function arrIndexValue(index){
 
 In the code above I have created a function called arrIndexValue that takes an array index number as a parameter. This will allow you to check the value of any index in the array arr. Also, this approach lets you have less repetitive code in the future if you find yourself checking the values of arr often.
 
-I did remove a good chunk of code within the examples I have provided. Please let me know if it is vital to keep some of the code that was removed. If so I can go ahead, and provide feedback on your original code, and adjust my examples accordingly
+I did remove a good chunk of code within the examples I have provided. Please let me know if it is vital to keep some of the code that was removed. If so I can go ahead, and provide feedback on your original code, and adjust my examples accordingly.
 
 Please feel free to reach out for any further comments or questions.
 
