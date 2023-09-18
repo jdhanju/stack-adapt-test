@@ -33,8 +33,8 @@ async function updateBanner() {
     }
 
     // Get the current date
-    //const currentDate = new Date();
-    const currentDate = new Date(2023, 00, 02, 0, 0, 0, 0);
+    const currentDate = new Date();
+    //const currentDate = new Date(2023, 00, 02, 0, 0, 0, 0);
 
     // Find the index of the row that matches the current date
     let rowIndex = -1;
