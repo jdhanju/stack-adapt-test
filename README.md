@@ -14,7 +14,7 @@
 - Open the file **index.html** in a browser and the application will run
 
 ## How to test specific dates?
-- Currently, the application is set to use the user's current date. Follow the steps below to test alternative dates.
+- The application is set to use the user's current date. Follow the steps below to test alternative dates.
 - Open the file **script.js**
 - Scroll down to line 36
 - Comment out the line
