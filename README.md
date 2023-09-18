@@ -85,7 +85,7 @@ function arrIndexValue(index){
 
 In the code above I have created a function called arrIndexValue that takes an array index number as a parameter. This will allow you to check the value of any index in the array arr. Also, this approach lets you have less repetitive code in the future if you find yourself checking the values of arr often.
 
-I did remove a good chunk of code within the examples I have provided. Please let me know if it is vital to keep some of the code that was removed. If so I can go ahead, and provide feedback on your original code, and adjust my examples accordingly.
+I did remove a good chunk of code within the examples I have provided. Please let me know if it is vital to keep some of the code that was removed. If so I can go ahead, and adjust my examples accordingly.
 
 Please feel free to reach out for any further comments or questions.
 
