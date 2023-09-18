@@ -30,7 +30,7 @@
 ![screenshot2](images/sc2.png)
 
 ## Improving Performance
-- One way to improve the performance of this application is to store all fetched data in the browser's local storage. This way users won't have to wait as long for ads to load.
+- One way to improve performance of this application is to store all fetched data in the browser's local storage. This way users won't have to wait as long for ads to load.
 - The downside of this approach is that any updates to the CSV file won't show on the users end unless they clear their local storage.
 - This problem can be avoided by adding a timestamp to local storage, and updating the data once a certain amount of time has passed by.
 - Even though this solution is better it still doesn't offer instant updates, so I decided not to implement it.
