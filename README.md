@@ -67,7 +67,7 @@ Hello! Thank you for submitting your code for review! I tried to run the code yo
 })();
 ```
 
-Even though the code above will work, I would like to share an alternative solution that is a little shorter. Since the objection of your code is to print the 2nd index of the array named arr we can remove all the code except for the console.log
+Even though the code above will work, I would like to share an alternative solution that is a little shorter. Since the objective of your code is to print the 2nd index of the array named arr we can remove all the code except for the console.log
 
 ```
 console.log("the second index is:", arr[2]);
