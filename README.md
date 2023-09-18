@@ -56,7 +56,7 @@
 - Now that we have parentheses at the end of the anonymous function the output is **the second index is: 2**
 
 ### Feedback
-- Hello! Thank for submitting your code for review! I tried to run the code you have provided, however, it seems like there is a minor bug, which is preventing the code from running. The anonymous function you have created won't run because it missing a pair of parentheses at the end of the function. To fix this problem simply add a pair parentheses at the end of your function. Here is what it will look it:
+Hello! Thank for submitting your code for review! I tried to run the code you have provided, however, it seems like there is a minor bug, which is preventing the code from running. The anonymous function you have created won't run because it missing a pair of parentheses at the end of the function. To fix this problem simply add a pair parentheses at the end of your function. Here is what it will look it:
 
 ```
 (function(){
@@ -67,7 +67,7 @@
 })();
 ```
 
-- Even though the code above will work, I would like to share an alternative solution that is a little shorter. Since the objection of your code is to print the 2nd index of the array named arr we can remove all the code execpt for the console.log
+Even though the code above will work, I would like to share an alternative solution that is a little shorter. Since the objection of your code is to print the 2nd index of the array named arr we can remove all the code execpt for the console.log
 
 ```
 console.log("the second index is:", arr[2]);
