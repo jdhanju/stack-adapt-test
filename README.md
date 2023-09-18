@@ -56,7 +56,7 @@
 - Now that we have parentheses at the end of the anonymous function the output is **the second index is: 2**
 
 ### Feedback
-Hello! Thank you for submitting your code for review! I tried to run the code you have provided, however, it seems like there is a minor bug, which is preventing the code from running. The anonymous function you have created won't run because it needs a pair of parentheses at the end of the function. To fix this problem simply add a pair of parentheses at the end of your function. Here is what it will look it:
+Hello! Thank you for submitting your code for review! I tried to run the code you have provided, however, it seems like there is a minor bug, which is preventing the code from running. The anonymous function you have created won't run because it needs a pair of parentheses at the end of the function. Here is what it will look it once the issue is resolved:
 
 ```
 (function(){
